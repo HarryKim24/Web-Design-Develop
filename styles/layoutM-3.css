@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+
+  position: relative;
+}
+#header::after {
+  content: '';
+  width: 100%;
+  height: 0px;
+  background-color:coral;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  transition: 0.5s ease;
+}
+#header.on::after {
+  height: 180px;
+}
+#header.on .nav > ul > li > ul {
+  height: 180px;
+}
+#header .logo {
+  width: 20%;
+  height: 100px;
+  background-color: azure;
+}
+#header .nav {
+  width: 80%;
+  height: 100px;
+  background-color: aqua;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+.nav > ul {
+  display: flex;
+  list-style: none;
+}
+.nav > ul > li {
+  position: relative;
+}
+.nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: cornflowerblue;
+}
+.nav > ul > li > a:hover {
+  background-color: crimson;
+}
+.nav > ul > li > ul {
+
+  position: absolute;
+  left: 0;
+  top: 43px;
+  list-style: none;
+
+  width: 100%;
+  text-align: center;
+
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.nav > ul > li > ul > li > a {
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  color: black;
+}
+.nav > ul > li > ul > li > a:hover {
+  background-color: darkgoldenrod;
+}
+
+#main {
+  width: 100%;
+}
+#main .slide {
+  width: 100%;
+  height: 300px;
+  background-color: antiquewhite;
+}
+#main .contents {
+  display: flex;
+  width: 100%;
+  background-color: blueviolet;
+}
+.contents .content1 {
+  width: 33.3333%;
+  height: 200px;
+  background-color: brown;
+}
+.contents .content2 {
+  width: 33.3333%;
+  height: 200px;
+  background-color: burlywood;
+}
+.contents .content3 {
+  width: 33.3333%;
+  height: 200px;
+  background-color: cadetblue;
+}
+
+#footer {
+  display: flex;
+  width: 100%;
+  background-color: aquamarine;
+}
+#footer .footer1 {
+  width: 20%;
+  height: 100px;
+  background-color: chartreuse;
+}
+#footer .footer2 {
+  width: 80%;
+  height: 100px;
+}
+.footer2 .footer2-1 {
+  width: 100%;
+  height: 50px;
+  background-color: coral;
+}
+.footer2 .footer2-2 {
+  width: 100%;
+  height: 50px;
+  background-color: cornflowerblue;
+}
