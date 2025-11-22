@@ -133,5 +133,5 @@ a {
   transition: 0.5s ease;
 }
 #main.on::after {
-  width: 100%;
+  width: calc(100% - 200px);
 }
