@@ -3,7 +3,7 @@ const $sliderWrap = document.querySelector('.sliderWrap');
 
 setInterval(() => {
   currnetIndex++;
-  $sliderWrap.style.marginTop = -currnetIndex * 25 + '%';
+  $sliderWrap.style.marginTop = -currnetIndex * 300 + 'px';
   $sliderWrap.style.transition = '1s ease';
 
   if (currnetIndex == 3) {
