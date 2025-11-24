@@ -8,9 +8,9 @@ setInterval(() => {
 
   if (currnetIndex == 3) {
     setTimeout(() => {
-      $sliderWrap.style.transition = '0s';
-      $sliderWrap.style.marginTop = '0';
       currnetIndex = 0;
+      $sliderWrap.style.marginTop = '0';
+      $sliderWrap.style.transition = '0s';
     }, 1000);
   }
 }, 1500);
