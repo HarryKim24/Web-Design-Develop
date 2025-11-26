@@ -58,18 +58,16 @@
 }
 .sliderWrap {
   width: 100%;
-  height: 400%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 .sliderWrap .slider {
+  position: relative;
   width: 100%;
   height: 100%;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  position: relative;
 }
 .sliderWrap .slider.s1 {
   background-image: url('/images/공원.jpg');
@@ -86,7 +84,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, .4);
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 
 

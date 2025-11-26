@@ -1,16 +1,16 @@
-let currnetIndex = 0;
+let currentIndex = 0;
 const sliderWrap = document.querySelector('.sliderWrap');
 
 setInterval(() => {
-  currnetIndex++;
-  sliderWrap.style.marginLeft = -currnetIndex * 100 + '%';
+  currentIndex++;
+  sliderWrap.style.marginLeft = -currentIndex * 100 + '%';
   sliderWrap.style.transition = '1s ease';
 
-  if (currnetIndex == 3) {
+  if (currentIndex == 3) {
     setTimeout(() => {
       sliderWrap.style.marginLeft = '0';
       sliderWrap.style.transition = '0s';
-      currnetIndex = 0;
+      currentIndex = 0;
     }, 1000);
   }
 }, 1500);
