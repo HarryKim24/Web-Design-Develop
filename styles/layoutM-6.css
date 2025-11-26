@@ -83,10 +83,6 @@ a {
 }
 
 /* nav */
-.nav {
-  position: relative;
-  z-index: 1000;
-}
 .nav > ul {
   
 }
@@ -95,42 +91,41 @@ a {
 }
 .nav > ul > li > a {
   display: block;
-  padding: 10px;
+  padding: 10px 50px;
   text-align: center;
-  background-color: #ccc;
+  background-color: #929292;
 }
 .nav > ul > li > a:hover {
-  background-color: #aeaeae;
+  background-color: #d1d1d1;
 }
 .nav > ul > li > ul {
   position: absolute;
-  right: -500px;
+  left: 200px;
   top: 0;
-  width: 500px;
+  width: 1000px;
   display: none;
+  z-index: 1000;
 }
 .nav > ul > li > ul > li {
-  display: inline;
+  display: inline-block;
 }
 .nav > ul > li > ul > li > a {
-  display: inline-block;
-  padding: 10px;
-  width: 100px;
+  display: block;
+  padding: 10px 20px;
   text-align: center;
 }
 .nav > ul > li > ul > li > a:hover {
-  background-color: #a2a2a2;
+  background-color: #efefef;
 }
-
 #main::after {
   content: '';
   width: 0;
   height: 250px;
-  background-color: #b0b0b0;
+  background-color: beige;
   position: absolute;
   top: 100px;
-  z-index: 1;
   transition: 0.5s ease;
+  z-index: 1;
 }
 #main.on::after {
   width: calc(100% - 200px);

@@ -1,16 +1,21 @@
-const $menu = document.querySelector('.nav > ul');
-const $submenu = document.querySelector('.nav > ul > li > ul');
+const menus = document.querySelectorAll('.nav > ul > li');
+const main = document.querySelector('#main');
+const submenus = document.querySelectorAll('.submenu');
 
-$menu.addEventListener('mouseover', () => {
-  $menu.querySelectorAll('.submenu').forEach(submenu => {
-    submenu.style.display = 'block';
+menus.forEach(menu => {
+  menu.addEventListener('mouseover', () => {
+    main.classList.add('on');
+    submenus.forEach(submenu => {
+      submenu.style.display = 'block';
+    })
   })
-  document.getElementById('main').classList.add('on');
 })
 
-$menu.addEventListener('mouseout', () => {
-  $menu.querySelectorAll('.submenu').forEach(submenu => {
-    submenu.style.display = 'none';
+menus.forEach(menu => {
+  menu.addEventListener('mouseout', () => {
+    main.classList.remove('on');
+    submenus.forEach(submenu => {
+      submenu.style.display = 'none';
+    })
   })
-  document.getElementById('main').classList.remove('on');
 })
