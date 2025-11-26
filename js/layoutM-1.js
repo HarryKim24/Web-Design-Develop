@@ -1,11 +1,13 @@
-const $menu = document.querySelectorAll('.nav > ul > li');
+const menus = document.querySelectorAll('ul > li');
 
-$menu.forEach(menuItem => {
-  menuItem.addEventListener('mouseover', () => {
-    menuItem.querySelector('.submenu').style.height = '155px';
+menus.forEach(menu => {
+  menu.addEventListener('mouseover', () => {
+    menu.querySelector('.submenu').style.height = '200px';
   })
+});
 
-  menuItem.addEventListener('mouseout', () => {
-    menuItem.querySelector('.submenu').style.height = '0px';
+menus.forEach(menu => {
+  menu.addEventListener('mouseout', () => {
+    menu.querySelector('.submenu').style.height = '0';
   })
-})
+});
